@@ -80,7 +80,7 @@
                             </span>
                         </span>
               <%= link_to home_gallery_single_path(item.id) do %> <img src="<%=image_path(item.image)%>" alt="Gallery"/><% end %>
-              <span class="project-details"> <%= link_to home_gallery_single_path(item.id) do %>Custom Illustration<% end %>
+              <span class="project-details"> <%= link_to home_gallery_single_path(item.id) do %><% item.name %><% end %>
                 For an international ad campaign.</span>
             </li>
 

@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'home/features', to: 'home#features', as: 'home_features'
   get 'home/gallery', to: 'home#gallery', as: 'home_gallery'
   get 'home/gallery_single/:id', to: 'home#gallery_single', as: 'home_gallery_single'
+  get 'home/about', to: 'home#about', as: 'home_about'
 
 
   devise_for :admin_users, ActiveAdmin::Devise.config

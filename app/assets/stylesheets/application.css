@@ -12,8 +12,11 @@
  *
  *= require_tree .
  *= require_self
- *= require bootstrap.min
- *= require font-awesome.min
- *= require bootstrap-theme.min
- *= require style
+ *= require bootstrap
+ *= require custom-styles
+ *= require flexslider
+ *= require prettyPhoto
+ *= require style-ie
+ *= require bootstrap-responsive
+ *= require style-ie
  */

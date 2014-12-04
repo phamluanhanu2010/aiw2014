@@ -11,8 +11,10 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery_ujs
-//= require turbolinks
-//= require_tree .
-//= require bootstrap.min
-//= require custom
+//= require jquery.custom
+//= require jquery.easing.1.3
+//= require jquery.flexslider
+//= require jquery.prettyPhoto
+//= require jquery.quicksand
+
+

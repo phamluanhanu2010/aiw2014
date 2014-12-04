@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
@@ -32,9 +32,10 @@ gem 'devise'
 gem 'activeadmin', github: 'activeadmin'
 
 gem 'tzinfo-data'
-
 gem 'bcrypt-ruby', :require => 'bcrypt'
 
+#minitest
+gem 'minitest', '5.4.2'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -47,3 +48,5 @@ gem 'bcrypt-ruby', :require => 'bcrypt'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+ gem 'rake','10.4.2'
+gem 'carrierwave', '~> 0.9'

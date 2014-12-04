@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def index
+    @AllPaint=Paint.all
   end
 
   def categories
@@ -16,5 +17,8 @@ class HomeController < ApplicationController
 
   def sample
     
+  end
+  def gallery_single
+  @Picture=Paint.find(params[:id])
   end
 end

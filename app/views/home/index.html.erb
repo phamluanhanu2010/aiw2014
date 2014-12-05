@@ -60,9 +60,10 @@
 
   <div class="span12">
     <h5 class="title-bg" style="color:blue;"> Những bức hình nổi bật:
-      <a class="btn btn-mini btn-inverse hidden-phone pull-right" href="gallery.html.erb" >Xem toàn bộ</a>
+      <a href="<%=Pathname(home_gallery_path) %>" class="btn btn-mini btn-inverse hidden-phone pull-right" > Xem toàn bộ</a>
 
     </h5>
+    <!--------------Search funtion---------------->
 
     <!-- Gallery Thumbnails
     ================================================== -->
@@ -80,8 +81,8 @@
                             </span>
                         </span>
               <%= link_to home_gallery_single_path(item.id) do %> <img src="<%=image_path(item.image)%>" alt="Gallery"/><% end %>
-              <span class="project-details"> <%= link_to home_gallery_single_path(item.id) do %><% item.name %><% end %>
-               <% item.author %></span>
+              <span class="project-details"> <%= link_to item.name, home_gallery_single_path(item.id) %>
+               <%= item.author %></span>
             </li>
 
             <% end %>

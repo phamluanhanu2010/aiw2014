@@ -1,0 +1,44 @@
+<!-- Page Content
+  ================================================== -->
+
+
+
+<div class="row">
+
+  <!-- Gallery Items
+  ================================================== -->
+  <div class="span12 gallery-single">
+    <ul id="filterOptions" class="gallery-cats clearfix">
+      <li class="active"><a href="<%= Pathname(home_index_path) %>" class="home">Home</a></li>
+      <li><a href="<%=Pathname(home_gallery_path) %>" class="gallery.htm">Gallery</a></li>
+      <li><a href="#" class="gallery-single.htm">Name of paint</a></li>
+
+
+    </ul>
+    <div class="row">
+      <div class="span6">
+        <img src=<%= @Picture.image %> class="align-left thumbnail="" alt="image">
+      </div>
+      <div class="span6">
+        <h2><%= @Picture.name %></h2>
+
+
+
+        <ul class="project-info">
+          <li><h6>Tác giả:</h6><%= @Picture.author %> </li>
+          <li><h6>Năm hoàn thành:</h6> <%= @Picture.date %></li>
+
+
+        </ul>
+        <p>Đôi nét về tác phẩm: </p>
+        <p><%= @Picture.intro %></p>
+        <%= link_to 'Back to Gallery', home_gallery_path %>
+
+      </div>
+    </div>
+
+  </div><!-- End gallery-single-->
+
+</div><!-- End container row -->
+
+</div> <!-- End Container -->

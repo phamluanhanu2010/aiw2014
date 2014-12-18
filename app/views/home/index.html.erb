@@ -14,7 +14,13 @@
 
   <!-- Headline Text
   ================================================== -->
-
+  <div class="span4">
+    <h3><%= @FeatureNews.title %></h3>
+    <p style="font-weight: 200;font-size: 21px;line-height: 28px;">
+      <%=@FeatureNews.description %>
+    </p>
+    <a href="<%= Pathname(home_detailnews_path(@FeatureNews.id)) %>"><i class="icon-plus-sign"></i>Chi tiết</a>
+  </div>
 </div><!-- End Headline -->
 
 <div class="row gallery-row"><!-- Begin Gallery Row -->

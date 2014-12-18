@@ -4,25 +4,22 @@
 
   <div class="span8 contact"><!--Begin page content column-->
     <ul id="filterOptions" class="gallery-cats clearfix">
-      <li class="active"><a href="index.htm" class="home">Home</a></li>
-      <li><a href="contact.htm" class="contact">Contact</a></li>
+      <li class="active" style="font-size:14px;" ><a href="<%= Pathname(home_index_path) %>" class="home">Trang chủ</a></li>
+      <li style="font-size:14px;" >Liên hệ</li>
 
     </ul>
-    <h2>Contact Us</h2>
-    <p>We are students to come from Ha Noi University. That is our first website to be designed by Ruby language. We hope to get your supports.If you want to contact us, you can take address on website. We are very friendly and happy to be shared experiences on Ruby language  </p>
-
-    <div class="alert alert-success">
-      Well done! You successfully read this important alert message.
-    </div>
+    <h2>Liên hệ với chúng tôi</h2>
+    <p style="font-size: 16px; font-family:Arial">Chúng tôi là những con người trẻ đến từ khoa Công Nghệ Thông Tin trường Đại Học Hà Nội. Với mục đích quảng cáo thông tin những bức ảnh nghệ thuật nổi tiếng trong và ngoài nước làm cho mọi tầng lớp đối tượng. Chúng tôi đã quyết định làm trang web này với công nghệ web trên nền tảng Rails Framework. Mong nhận được sự ủng hộ từ các bạn</p>
+    <p style="font-size: 16px;font-family:Arial">Hãy liên hệ với chúng tôi theo form đăng ký dưới đây để tất cả chúng ta có thể kết nối chia sẻ kinh nghiệm về nghệ thuật cũng như công nghệ</p>
 
     <form action="#" id="contact-form">
       <div class="input-prepend">
         <span class="add-on"><i class="icon-user"></i></span>
-        <input class="span4" id="prependedInput" size="16" type="text" placeholder="Name">
+        <input class="span4" id="prependedInput" size="16" type="text" placeholder="Tên của bạn">
       </div>
       <div class="input-prepend">
         <span class="add-on"><i class="icon-envelope"></i></span>
-        <input class="span4" id="prependedInput" size="16" type="text" placeholder="Email Address">
+        <input class="span4" id="prependedInput" size="16" type="text" placeholder="Địa chỉ mail">
       </div>
       <div class="input-prepend">
         <span class="add-on"><i class="icon-globe"></i></span>
@@ -31,7 +28,7 @@
       <textarea class="span6"></textarea>
       <div class="row">
         <div class="span2">
-          <input type="submit" class="btn btn-inverse" value="Send Message">
+          <input type="submit" class="btn btn-inverse" value="Gửi" onclick="alert('Gửi thành công. cảm ơn sự đóng góp của bạn.')">
         </div>
       </div>
     </form>
@@ -41,20 +38,20 @@
   <!-- Sidebar
   ================================================== -->
   <div class="span4 sidebar page-sidebar"><!-- Begin sidebar column -->
-    <h5 class="title-bg">Our Location</h5>
+    <h5 class="title-bg">Địa chỉ</h5>
     <address>
-      <strong>AIW Team - Famous Paints Profile</strong><br/>
-      Km9, Nguyen Trai Street, Thanh Xuan District<br/>
-      Ha Noi, Viet Nam<br/>
-      <abbr title="Phone">Phone:</abbr> (+84) 04 3854 4338
+      <strong>AIW Team - The Art Story</strong><br/>
+      Km9,Đường Nguyễn Trãi, Thanh Xuân, Hà Nội<br/>
+      Việt Nam<br/>
+      <abbr title="Phone">Điện thoại:</abbr> (+84) 04 3854 4338
     </address>
 
     <address>
-      <strong>AIW Team - Famous Paints Profile</strong><br>
+      <strong>AIW Team - The Art Story</strong><br>
       <a href="mailto:#">aiw_team_2014@gmail.com</a>
     </address>
 
-    <h5 class="title-bg">Map Us</h5>
+    <h5 class="title-bg">Địa điểm làm việc của chúng tôi</h5>
     <iframe src="https://mapsengine.google.com/map/embed?mid=zdlKEs87PHes.kJmLR7pn9Zl4" width="370" height="250"></iframe>
 
   </div><!-- End sidebar column -->

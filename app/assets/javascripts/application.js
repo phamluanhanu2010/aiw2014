@@ -9,12 +9,8 @@
 //
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
-//
-//= require jquery
-//= require jquery.custom
-//= require jquery.easing.1.3
-//= require jquery.flexslider
-//= require jquery.prettyPhoto
-//= require jquery.quicksand
+//= require bootstrap
+
+
 
 

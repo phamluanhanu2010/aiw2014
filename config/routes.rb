@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
   root 'home#index'
 
   get 'home/index', to: 'home#index', as: 'home_index'
   get 'home/news', to: 'home#news', as: 'home_news'
   get 'home/contact', to: 'home#contact', as: 'home_contact'
-  get 'home/detailnews', to: 'home#detailnews', as: 'home_detailnews'
+  get 'home/detailnews/:id', to: 'home#detailnews', as: 'home_detailnews'
   get 'home/features', to: 'home#features', as: 'home_features'
   get 'home/gallery', to: 'home#gallery', as: 'home_gallery'
   get 'home/gallery_single/:id', to: 'home#gallery_single', as: 'home_gallery_single'

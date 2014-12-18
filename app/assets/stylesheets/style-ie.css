@@ -22,7 +22,7 @@ li.span3 .project-details {
     text-overflow:    ellipsis;
     overflow:hidden;
     white-space:nowrap;
-    width: 200px;
+    width: 250px;
 	}
 li.span2 .project-details {
     -o-text-overflow: ellipsis;
@@ -41,7 +41,7 @@ li.span2 .project-details {
 
 
 /*** Blog ***/
-#blogCarousel .carousel-inner .item a img {margin-right: 90px;}
+#blogCarousel .carousel-inner .item a img {margin-right: 20px;}
 .post-info h4 {clear:both;}
 .blog-details-preview {display: none; border:1px solid #000;}
 .blog-post-hover {width:220px; height:179px;}

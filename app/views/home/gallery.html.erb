@@ -7,31 +7,28 @@
   <div class="span12 gallery">
 
     <ul id="filterOptions" class="gallery-cats clearfix">
-      <li class="active"><a href="index.htm" class="home">Trang chủ</a></li>
-      <li><a href="gallery.htm" class="gallery">Gallery</a></li>
+      <li class="active"style="font-size:14px;" ><a href="<%= Pathname(home_index_path) %>" class="home">Trang chủ</a></li>
+      <li style="font-size:14px;" >Gallery</li>
 
     </ul>
 
     <div class="row clearfix">
       <ul class="gallery-post-grid holder">
-
-        <!-- Gallery Item 1 -->
         <% @AllPaint.each do |item| %>
-            <!-- Gallery Item 1 -->
-            <li  class="span3 gallery-item" data-id="id-1" data-type="illustration">
+        <!-- Gallery Item 1 -->
+        <li  class="span3 gallery-item" data-id="id-1" data-type="illustration">
                         <span class="gallery-hover-4col hidden-phone hidden-tablet">
                             <span class="gallery-icons">
-                                <a href='<%= item.image %>' class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
-                              <%= link_to home_gallery_single_path(item.id) do %> <img src="<%=image_path(item.image)%>" alt="Gallery"/><% end %>
+                                <a href="<%= item.image %>" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                              <%= link_to home_gallery_single_path(item.id) do %><img src="<%=image_path(item.image)%>" alt="Gallery"/><% end %>
                             </span>
                         </span>
-              <%= link_to home_gallery_single_path(item.id) do %> <img src="<%=image_path(item.image)%>" alt="Gallery"/><% end %>
-              <span class="project-details"> <%= link_to home_gallery_single_path(item.id) do %><% item.name %><% end %>
-                <% item.author %></span>
-            </li>
+          <%= link_to home_gallery_single_path(item.id) do %> <img src="<%=image_path(item.image)%>" alt="Gallery" /><% end %>
+          <span class="project-details"> <%= link_to item.name, home_gallery_single_path(item.id) %>
+            <%= item.author %></span>
+        </li>
 
         <% end %>
-
       </ul>
     </div>
 

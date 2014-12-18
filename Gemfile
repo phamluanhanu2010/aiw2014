@@ -34,6 +34,9 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'tzinfo-data'
 gem 'bcrypt-ruby', :require => 'bcrypt'
 
+#flexslider gems
+gem 'flexslider', '~> 2.0.2'
+
 #minitest
 gem 'minitest', '5.4.2'
 # Use ActiveModel has_secure_password
@@ -48,5 +51,8 @@ gem 'minitest', '5.4.2'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
- gem 'rake','10.4.2'
+gem 'rake','10.4.2'
 gem 'carrierwave', '~> 0.9'
+gem 'carousel', '~> 1.0.0'
+
+gem 'ckeditor'

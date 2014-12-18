@@ -3,7 +3,7 @@ html, body {
 	line-height:18px;
 	height: 100%;
  }
-body {background: #f9f9f9 url(../app/assets/images/page-bg-1.jpg);}
+body {background: #f9f9f9 url("page-bg-1.jpg");}
 
 .main-container {
 	height:auto; 
@@ -172,7 +172,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu{ display: block; }
 / Slider
 **************************************/
 .carousel-caption h4 { font-size: 14px; text-shadow:none; }
-.carousel-caption {background: url(../img/post-item-hover.png);}
+.carousel-caption {background: url("post-item-hover.png");}
 .carousel-control {border: none; top: 177px;}
 
 
@@ -187,7 +187,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu{ display: block; }
 .gallery-hover-3col,
 .gallery-hover-4col-cir { 
 	display:none; 
-	background:url(../img/gallery-item-hover.png);
+	background:url("gallery-item-hover.png");
 	position:absolute; 
 	z-index: 10;
 }
@@ -327,7 +327,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu{ display: block; }
 a.item-zoom-link { 
 	height: 42px;
 	width: 42px;
-	background: #ffffff url(../img/gallery-item-icons.png) no-repeat;
+	background: #ffffff url("gallery-item-icons.png") no-repeat;
 	background-position: 0px 0px;
 	position:absolute;
 	display: block;
@@ -335,14 +335,14 @@ a.item-zoom-link {
 a.item-details-link { 
 	height: 42px;
 	width: 42px;
-	background: #ffffff url(../img/gallery-item-icons.png) no-repeat;
+	background: #ffffff url("gallery-item-icons.png") no-repeat;
 	background-position: -42px 0px;
 	position:absolute; 
 	left: 47px;
 	display: block;
 }
-a.item-zoom-link:hover {background: #d8450b url(../img/gallery-item-icons.png) no-repeat;}
-a.item-details-link:hover {background: #d8450b url(../img/gallery-item-icons.png) no-repeat; background-position: -42px 0px;}
+a.item-zoom-link:hover {background: #d8450b url("gallery-item-icons.png") no-repeat;}
+a.item-details-link:hover {background: #d8450b url("gallery-item-icons.png") no-repeat; background-position: -42px 0px;}
 
 .gallery-post-grid {margin:0px;}
 .gallery-post-grid li {list-style: none; float: left; margin-bottom: 30px;}
@@ -437,7 +437,7 @@ ul.post-data li:last-child {padding-right: 0px;}
 .blog-post-hover { 
 	display:none; 
 	width:270px; height:220px;
-	background:url(../img/post-item-hover.png);
+	background:url("post-item-hover.png");
 	position:absolute; 
 	z-index: 10;
 }
@@ -620,7 +620,7 @@ ul.img-feed li {
 	.social-icons li:last-child {display:none;}
 }
 a.social-icon { 
-	background: url(../img/social-icons.png);
+	background: url("social-icons.png");
 	display: block; 
 	width: 46px; 
 	height: 46px;
@@ -672,7 +672,7 @@ a.accordion-toggle{background: #f5f5f5;}
 #toTop {
 	width:47px;
 	height:47px;
-	background:url(../img/back-top-btn.png) no-repeat;
+	background:url("back-top-btn.png") no-repeat;
 	text-align:center;
 	position:fixed;
 	bottom:25px;
@@ -736,7 +736,7 @@ a.accordion-toggle{background: #f5f5f5;}
 	width: 100px; 
 	height: 100px;
 	position: absolute;
-	background: url(../img/rnd-client-mask.png);
+	background: url("rnd-client-mask.png");
 }
 .client-logos {margin: 20px 0px 0px 0px;}
 .client-logos li {list-style: none; float: left; margin: 0px 7px;}
@@ -777,17 +777,46 @@ a.accordion-toggle{background: #f5f5f5;}
 .project-details {
     text-align: center;
 }
-
 .project-details > a:hover {
     font-weight: bold;
     font-size: 14px;
     width: 100%;
 }
-
 .gallery-post-grid li {
 
     text-align: center;
 }
-.span3.footer-col {
-    margin: 0 50px;
+
+.fl_left.first > p {
+    font-size: 17px;
+}
+
+.team_title {
+    font-size: 17px;
+}
+
+.team_name {
+    font-size: 22px;
+    font-weight: bold;
+}
+.post-content .image_news {
+    text-align: center;
+}
+.image_news > p {
+    margin-left: 190px;
+    width: 390px;
+}
+
+.span4 {
+    height: 495px;
+    width: 370px;
+}
+.span4 > h5 {
+    font-weight: bold;
+}
+
+
+.span4 {
+    height: auto;
+    width: 370px;
 }

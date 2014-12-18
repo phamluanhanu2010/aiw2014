@@ -3,34 +3,33 @@
   <!-- Logo
   ================================================== -->
   <div class="span5 logo">
-    <a href="index.htm"><img src="<%=image_path("famouspaintsProfile-logo.png")%>"/></a><br/>
-    <h5 style="margin-left: 15px;margin-top: 2px;">...........................Hãy cảm nhận bằng trái tim</h5><br/>
+    <a href="<%= Pathname(home_index_path)%>"><img src="<%=image_path("theartstory.png")%>"/></a><br/>
+    <h5 style="margin-left: 15px;margin-top: 2px;">****** &nbsp;&nbsp;&nbsp; Hãy cảm nhận bằng trái tim &nbsp;&nbsp;&nbsp;******</h5><br/>
   </div>
 
   <!-- Main Navigation
   ================================================== -->
+
   <div class="span7 navigation">
     <div class="navbar hidden-phone">
 
       <ul class="nav">
-        <li>
-          <%= link_to home_index_path do %>
-              Trang chủ
-          <% end %>
-        </li>
-        <li>
         <li >
-          <%= link_to 'Tin tức', home_news_path %>
+          <a href="<%= Pathname(home_index_path)%>" >Trang chủ</a>
         </li>
+
+        <li >
+          <a href="<%= Pathname(home_news_path)%>" >Tin tức</a>
+        </li>
+
+        <li >
+          <a href="<%= Pathname(home_gallery_path)%>">Gallery</a>
         </li>
         <li >
-          <%= link_to 'Gallery', home_gallery_path %>
+          <a href="<%= Pathname(home_contact_path)%>" >Liên hệ</a>
         </li>
-        <li>
-          <%= link_to 'Liên hệ', home_contact_path %>
-        </li>
-        <li>
-          <%= link_to 'Giới thiệu', home_about_path %>
+        <li >
+          <a href="<%= Pathname(home_about_path)%>" >Giới thiệu</a>
         </li>
       </ul>
 
@@ -42,11 +41,12 @@
       <div class="mobile-nav-select">
         <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
           <option value="">Navigate...</option>
-          <option value="home_index_path">Trang chủ</option>
-          <option value="home_news_path">Tin tức</option>
-          <option value="home_gallery_path">Gallery</option>
-          <option value="home_contact_path">Liên hệ</option>
-          <option value="home_about_path">Giới thiệu</option>
+          <option value="<%= Pathname(home_index_path)%>">Trang chủ</option>
+          <option value=" <%= Pathname(home_news_path)%>">Tin tức</option>
+          <option value="<%= Pathname(home_gallery_path)%>">Gallery</option>
+          <option value="<%= Pathname(home_contact_path)%>">Liên hệ</option>
+          <option value="<%= Pathname(home_about_path)%>">Giới thiệu</option>
+
         </select>
       </div>
     </form>

@@ -13,7 +13,7 @@ ActiveAdmin.register Paint do
   #   permitted
   # end
   form(:html => { :multipart => true }) do |f|
-    f.inputs "New Paint" do
+      f.inputs "New Paint" do
       f.input :image, label:"Profile Picture", :as => :file
       f.input :name
       f.input :author

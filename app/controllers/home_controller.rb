@@ -22,4 +22,7 @@ class HomeController < ApplicationController
   def gallery
   @AllPaint=Paint.all
   end
+
+
+
 end

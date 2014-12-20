@@ -31,7 +31,16 @@
     </div>
 
     <h3 class="title-bg">Tin tức về các hoạt động nghệ thuật</h3>
-
+    <div class="row">
+      <% @AllNews.each do |item| %>
+      <div class="span4">
+        <img src="<%=image_path(item.image)%>" alt="image" style="width: 370px;height: 300px;">
+        <h5><%= item.title %></h5>
+        <p><%= item.description %></p>
+        <a class="btn btn-small btn-inverse pull-left" href="<%= Pathname(home_detailnews_path(item.id)) %>">Chi tiết</a>
+      </div>
+      <% end %>
+    </div>
 
   </div>
 </div>

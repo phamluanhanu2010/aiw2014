@@ -1,0 +1,60 @@
+<!-- Blog Content
+   ================================================== -->
+<div class="row"><!--Container row-->
+
+  <!-- Blog Full Post
+  ================================================== -->
+  <div class="span8 blog">
+    <ul id="filterOptions" class="gallery-cats clearfix">
+      <li class="active" style="font-size:14px;"><a href="<%= Pathname(home_index_path) %>" class="home">Trang chủ</a></li>
+      <li style="font-size:14px;"><a href="<%= Pathname(home_news_path) %>" class="news">Tin tức</a></li>
+      <li style="font-size:14px;" ><%= @detailNews.title %></li>
+    </ul>
+    <!-- Blog Post 1 -->
+    <article>
+      <h3 class="title-bg"><a><%= @detailNews.title %></a></h3>
+      <div class="post-content">
+        <div class="image_news">
+        <a><img src="<%=image_path(@detailNews.image)%>" alt="detail_news_image"></a>
+          <p><%= @detailNews.imagename%></p>
+        </div>
+        <div class="post-body">
+          <%= @detailNews.content.html_safe %>
+        </div>
+
+        <div class="post-summary-footer">
+          <ul class="post-data">
+            <li><i class="icon-calendar"></i> <%= @detailNews.created_at %></li>
+            <li><i class="icon-user"></i> <a href="#"><%= @detailNews.author %></a></li>
+
+          </ul>
+        </div>
+      </div>
+    </article>
+
+  </div><!--Close container row-->
+
+  <!-- Blog Sidebar
+  ================================================== -->
+  <div class="span4 sidebar">
+    <!--Video Widget-->
+
+    <!--Popular Posts-->
+    <h5 class="title-bg">Tin tức mới nhất</h5>
+    <ul class="popular-posts">
+      <% @popularNews.each do |item| %>
+      <li>
+        <a href="<%= Pathname(home_detailnews_path(item.id)) %>"><img src="<%=image_path(item.image)%>" alt="hot_new" style="width: 70px;height: 70px;"/></a>
+        <h6><a href="<%= Pathname(home_detailnews_path(item.id)) %>"><%= item.title %></a></h6>
+        <em><%= item.created_at %></em>
+      </li>
+      <% end %>
+    </ul>
+    <h5 class="title-bg">Video - Góc nghệ thuật</h5>
+    <iframe src="http://player.vimeo.com/video/24496773" width="370" height="208"></iframe>
+
+  </div>
+
+</div>
+
+</div> <!-- End Container -->
